@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   
+}
+
+header{
+    height: 100vh;
+    /*background: url(./download2.jpeg) center center/cover no-repeat;*/
+position: relative;
+ background-image: url(./photo-1504674900247-0877df9cc836.jfif);
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    ;
+}
+ul{
+list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#navbar img{
+    width:80px;
+    margin-left: 100px;
+}
+
+#navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#navbar ul{
+display: flex;
+margin-right: 100px;
+}
+#navbar ul a{
+    padding:15px 20px;
+    color: aliceblue;
+    font-weight: 600;
+}
+#navbar ul a:hover{
+       background-color: rgba(255, 255, 255, 0.479);
+    border-bottom: 2px solid white;
+}
+/* utility classes*/
+.primary-text{
+
+color: rgb(240, 72, 11);
+
+}
+.btn{
+
+display: inline-block;
+padding: 15px 30px;
+border: none;
+border-radius: 15px;
+
+}
+.btn-primary{
+
+color:white;
+border :1px solid white;
+
+}
+.btn-primary:hover{
+    background:  orangered;
+    }
+    .btn-secandry:hover
+    {
+background: #cfac0f;
+
+    }
+header .content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height:85%;
+color: white;
+
+}
+header .content h1{
+    font-size: 40px;
+
+}
+header .content p{
+    margin: 20px 0 40px;
+}
+header .content a{
+    color: aliceblue;
+
+}
+header::before{
+
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.6);
+
+
+}
+header *{
+    z-index: 10;
+
+}
+
+.conteiner{
+
+    
+    max-width: 1100px;
+    margin:auto
+}
+
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+#about .title , .offer-title , .menu-title{
+
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#about h2 , #offers .offer-title h3 , #menu .menu-title h3{
+
+font-size: 40px;
+color: #cfac0f;
+margin-bottom: 20px;
+
+}
+#about .title p , #offers .offer-title p , .menu-title p{
+    font-size: 14px;
+    color:#066785;
+    font-weight: 600;
+
+}
+ .about-content{
+
+display: flex;
+justify-content: space-between;
+
+
+}
+.about-content img{
+
+    width:250px;
+}
+.about-content p {
+
+    color: #066785;
+    margin-right: 15rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+#offers .offer-items p{
+
+    color: #066785;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 4px 50px 0px 50px;
+    margin-bottom: 15px;
+}
+
+.btn-secandry{
+    color:white;
+    background-color: #066785;
+  margin-top: 2rem;
+}
+
+#offers{
+
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(90, 158, 185, 0.2);
+   
+}
+#offers .offer-items{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.picture2{
+    width: 150px;
+    height: 150px;
+}
+
+.gf{
+
+    width: 150px;
+}
+.picture3{
+    width: 180px;
+    height: 150px;
+}
+
+.offer-items h3{
+
+    color: #03485e;
+}
+
+.offer-items span , .menu-item span{
+
+color: #cfac0f;
+font-size: 18px;
+font-weight: 600;
+
+}
+#menu{
+
+    background-color: hsla(194, 96%, 35%, 0.5);
+    padding: 2rem 0;
+    height: 100vh;
+   
+
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+.menu-item img{
+
+    border-radius: 50%;
+    width: 80px;
+    margin-right: 20px;
+
+}
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+.menu-items h4{
+    color: aliceblue;
+    border-bottom: 1px dashed white;
+padding: 10px;
+position: relative;
+}
+.menu-item span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu-items{
+
+    padding: 0 30px;
+}
+.menu-item p{
+    padding: 10px;
+}
+#menu .btn{
+    background: #cfac0f;
+    display: block;
+    margin:10px auto 0;
+    cursor: pointer;
+    
+}
+#menu .btn:hover{
+
+    background: white;
+}
+/* daytime */
+
+.daytime-items{
+
+background-color:hsla(49, 86%, 44%, 0.753);
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+height: 40vh;
+}
+.daytime-item img{
+    width: 130px;
+    border-radius: 50%;
+}
+
+.daytime-item h4{
+font-size: 28px;
+display: flex;
+justify-content: center;
+   
+}
+/* Gallery */
+
+.img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+   opacity: 0.9;
+
+}
+.img-gallery img:hover{
+
+opacity: 1;
+
+}
+#gallery{
+
+    background-color: hsla(194, 96%, 35%, 0.5);
+    padding: 3rem 0 6rem;
+    height: 110vh;
+}
+#gallery h2{
+
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contact{
+
+    padding: 5rem 0;
+    background-color: aliceblue;
+
+}
+#contact .conteiner{
+    max-width: 900px;   
+}
+.contact-content{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-info{
+    width: 50%;
+}
+ 
+.contant-info div{
+
+    margin: 30px 0;
+    height: 1.7;
+}
+.contant-info div h3{
+    font-size: 28px;
+    color:rgba(14, 13, 13, 0.719);
+    margin-bottom: 10px;
+
+}
+.contant-info div p{
+    color: gray;
+   
+}
+ i{
+    color:#cfac0f;
+    margin-right: 5px;
+}
+.contant-info div a{
+    color:gray;
+   
+    border-radius: 50%;
+}
+.contant-info div a:hover{
+    color:black;
+    font-size: 30px;
+    }
+form{
+    width: 50%;
+
+}
+form input ,textarea{
+
+    display: block;
+    width:100%;
+    padding: 20px 15px;
+    margin: 20px;
+    border: none;
+
+}
+form .btn{
+
+    background-color: #cfac0f;
+    color:rgba(240, 248, 255, 0.637)
+}
+form .btn:hover{
+
+    background-color:rgba(128, 128, 128, 0.671);
+  cursor: pointer;
+
+}
+
+/* footer */
+footer{
+
+text-align: center;
+
+}
+
+    
